@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+.header {
+  border-bottom: 3px solid black;
+  width: 100%;
+  height: 111px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.basketIcon {
+  height: 111px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.headerTitle {
+  margin-left: 20px;
+}
+
+.main {
+  /* border: 3px solid yellow; */
+  min-height: calc(100vh - 111px);
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card {
+  border: 3px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  margin: 70px 10px 70px 10px;
+  border-radius: 20px;
+}
+
+.img-card-container {
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 200px;
+}
+
+.img-card-container img {
+  object-fit: contain;
+}
+
+.card1 .img-card-container img {
+  margin-bottom: 20px;
+}
+
+.card4 .img-card-container img {
+  margin-bottom: 20px;
+}
+
+.toBascket {
+  width: 200px;
+  padding: 20px;
+  margin-top: 40px;
+  background-color: transparent;
+  border: 3px solid black;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all .5s;
+}
+
+.toBascket:hover {
+  background-color: black;
+  color: white;
+}
+
+.bascket {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 200vh;
+  position: absolute;
+  margin-top: -111px;
+  background-color: white;
+}
+
+.closeBascket.active {
+  display: none;
+  width: 130px;
+  height: 130px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.container-product {
+  /* border: 3px solid red; */
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100%;
+  margin-top: 10px;
+}
+
+.bascketTitle {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card-container-bascket {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-bascket {
+  border: 3px solid black;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 450px;
+  height: 315px;
+  margin: 15px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+.card-bascket img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  margin: 20px;
+}
+
+.card-bascket1.active {
+  display: flex;
+}
+
+.card-bascket2.active {
+  display: flex;
+}
+
+.card-bascket3.active {
+  display: flex;
+}
+
+.card-bascket4.active {
+  display: flex;
+}
+
+.card-bascket5.active {
+  display: flex;
+}
+
+.card-bascket6.active {
+  display: flex;
+}
+
+.bodyOverflow {
+  overflow-x: hidden;
+}
